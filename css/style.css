@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: #1B1426;
+}
+
+.grid-layout {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-top {
+    border-bottom: 2px solid #F9AA01;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contatos {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.phone {
+    display: flex;
+}
+
+.mail {
+    display: flex;
+}
+
+.contatos img {
+    padding-right: 10px;
+}
+
+.midias-sociais {
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+
+    width: 25%;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
