@@ -1,3 +1,7 @@
+/* Imports de fonts */
+
+/* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,67 +10,50 @@
 
 body {
     color: white;
+}
+
+/* HEADER */
+header {
+    height: 60px;
     background-color: #1B1426;
 }
 
-.grid-layout {
-    width: 80%;
-    margin: 0 auto;
-}
-
 .header-top {
-    border-bottom: 2px solid #F9AA01;
-}
-
-.header-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contatos {
-    display: flex;
-    width: 400px;
-    justify-content: space-between;
-}
-
-.phone {
-    display: flex;
-}
-
-.mail {
-    display: flex;
-}
-
-.contatos img {
-    padding-right: 10px;
-}
-
-.midias-sociais {
-    display: flex;
-    width: 150px;
-    justify-content: space-around;
-}
-
-a {
-    text-decoration: none;
+    display: none;
 }
 
 .header-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 100%;
 }
 
-.menu {
-    display: flex;
+header nav {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 80vw;
+    height: 100vh;
+    background-color: grey;
 
-    width: 25%;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }
 
-.icons {
+header .menu-usuarios {
+    display: none;
+}
+
+.layout-grid {
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+}
+
+.alinhamento-between-center {
     display: flex;
-    width: 150px;
     justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 86px;
 }
