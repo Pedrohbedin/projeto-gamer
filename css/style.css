@@ -1,5 +1,10 @@
 /* Imports de fonts */
 
+@font-face {
+    font-family: Titilium;
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
 /* Reset CSS */
 
 * {
@@ -8,9 +13,25 @@
     box-sizing: border-box;
 }
 
+/* Classes Genéricas */
+.layout-grid {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* justify content + align items */
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 body {
     color: white;
 }
+/* Mobile First */
 
 /* HEADER */
 header {
@@ -18,42 +39,67 @@ header {
     background-color: #1B1426;
 }
 
-.header-top {
+header .header-top {
     display: none;
 }
 
-.header-bottom {
-    height: 100%;
+header .header-bottom {
+    height: 60px;
+}
+header .logo {
+    width: 86px;
 }
 
 header nav {
     position: fixed;
-    left: 0;
     top: 60px;
+    left: 0;
     width: 80vw;
-    height: 100vh;
-    background-color: grey;
+    height: calc(100vh - 60px);
+    background: linear-gradient(0deg, rgba(168,168,168,1) 30%, rgba(27,20,38,1) 70%);
 
     display: flex;
     flex-direction: column;
-}
+    padding-bottom: 20px;
+    backdrop-filter: blur(45px);
 
+}
 header .menu-usuarios {
     display: none;
 }
 
-.layout-grid {
-    margin: 0 auto;
-    width: 90%;
-    height: 100%;
-}
+header nav > a {
 
-.alinhamento-between-center {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    border-bottom: 2px solid #F9aa01;
+    padding: 30px 0px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Titilium;
+    gap: 20px;
+
 }
 
-.logo {
-    width: 86px;
+header .header-bottom nav a:last-of-type{
+    border-bottom: none;
 }
+
+
+.midias-sociais {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+
+
